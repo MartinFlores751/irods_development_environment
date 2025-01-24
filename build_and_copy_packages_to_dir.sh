@@ -104,7 +104,7 @@ while [ -n "$1" ] ; do
         --exclude-unit-tests)         unit_test_config="-DIRODS_UNIT_TESTS_BUILD=NO";;
         --exclude-microservice-tests) msi_test_config="-DIRODS_MICROSERVICE_TEST_PLUGINS_BUILD=NO";;
         --enable-address-sanitizer)   enable_asan="-DIRODS_ENABLE_ADDRESS_SANITIZER=YES";;
-        --enable-address-sanitizer)   enable_ubsan="-DIRODS_ENABLE_UNDEFINED_BEHAVIOR_SANITIZER=YES";;
+        --enable-undefined-behavior-sanitizer)   enable_ubsan="-DIRODS_ENABLE_UNDEFINED_BEHAVIOR_SANITIZER=YES";;
         --custom-externals)           shift; custom_externals=$1;;
         -h|--help)                    usage;;
     esac
